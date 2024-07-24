@@ -1,0 +1,16 @@
+<div class="note-container">
+    <button (click)="selectNoteType('text')">Text Note</button>
+    <button (click)="selectNoteType('article')">Article Note</button>
+    <button (click)="selectNoteType('picture')">Picture Note</button>
+    <button (click)="selectNoteType('document')">Document Note</button>
+    <button (click)="selectNoteType('Meeting')">Meeting Note</button>
+
+  
+    <app-text-note *ngIf="selectedNoteType === 'text'" [noteType]="'text'"></app-text-note>
+    <app-text-note *ngIf="selectedNoteType === 'article'" [noteType]="'article'"></app-text-note>
+    <app-text-note *ngIf="selectedNoteType === 'picture'" [noteType]="'picture'"></app-text-note>
+    <app-text-note *ngIf="selectedNoteType === 'document'" [noteType]="'document'"></app-text-note>
+    <app-text-note *ngIf="selectedNoteType === 'Meeting'" [noteType]="'Meeting'"></app-text-note>
+
+  </div>
+  

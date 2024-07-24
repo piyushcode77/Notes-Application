@@ -1,0 +1,10 @@
+<div class="home-container">
+  <h1>Notes</h1>
+  <button routerLink="/note-container">Create Note</button>
+  <div class="notes-list">
+    <div *ngFor="let note of textNotes$ | async" class="note-item">
+      <h3>{{ note.title }}</h3>
+      <p>{{ note.content }}</p>
+    </div>
+  </div>
+</div>
